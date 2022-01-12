@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activityEntries">
+        <item>Mapa Basico</item>
+        <item>Map Navigation</item>
+        <item>Map Camera Events</item>
+        <item>Marker</item>
+        <item>Shape</item>
+        <item>Map Type and Style</item>
+        <item>Map Settings</item>
+        <item>Snapshot</item>
+        <item>My Location</item>
+        <item>Location Source</item>
+        <item>StreetView Basic</item>
+        <item>StreetView Navigation</item>
+        <item>StreetView Events</item>
+        <item>StreetView Settings</item>
+        <item>StreetView and Map</item>
+    </string-array>
+</resources>
