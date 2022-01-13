@@ -39,6 +39,10 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:name=".mapa.ShapeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_shape" />
+        <activity
             android:name=".mapa.MarkerActivity"
             android:exported="false"
             android:label="@string/title_activity_marker" />

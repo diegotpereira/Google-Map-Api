@@ -3,4 +3,5 @@
     <string name="title_activity_mapa_basico">MapaBasico</string>
     <string name="title_activity_mapa_camera_eventos">MapaCameraEventosActivity</string>
     <string name="title_activity_marker">MarkerActivity</string>
+    <string name="title_activity_shape">ShapeActivity</string>
 </resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mapa.ShapeActivity">
+
+    <Button
+        android:id="@+id/btnCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Circulo"
+        android:textAllCaps="false"
+        map:layout_constraintEnd_toStartOf="@id/btnPoligono"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPoligono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Polígono"
+        android:textAllCaps="false"
+        map:layout_constraintEnd_toStartOf="@id/btnPolilinha"
+        map:layout_constraintStart_toEndOf="@id/btnCirculo"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPolilinha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Polilinha"
+        android:textAllCaps="false"
+        map:layout_constraintEnd_toStartOf="@id/btnSobreposicoes"
+        map:layout_constraintStart_toEndOf="@id/btnPoligono"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSobreposicoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobreposições de solo"
+        android:textAllCaps="false"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toEndOf="@id/btnPolilinha"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintEnd_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@id/btnCirculo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
