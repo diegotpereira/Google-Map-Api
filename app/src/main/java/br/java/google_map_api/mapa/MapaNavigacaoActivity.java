@@ -25,6 +25,9 @@ public class MapaNavigacaoActivity extends FragmentActivity implements OnMapRead
     public  static final CameraPosition TORRES = new CameraPosition.Builder()
             .target(new LatLng(-29.345405, -49.728500)).zoom(15.5f).bearing(300).tilt(25).build();
 
+    public static final CameraPosition CAPAO = new CameraPosition.Builder()
+            .target(new LatLng(-29.757171, -50.017498)).zoom(15.5f).bearing(0).tilt(25).build();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +49,8 @@ public class MapaNavigacaoActivity extends FragmentActivity implements OnMapRead
         Button btnZoomIn = findViewById(R.id.btnZoomIn);
         Button btnZoomOut = findViewById(R.id.btnZoomOut);
 
+        Button btnRodarAnimacao = findViewById(R.id.btnRodarAnimacao);
+        Button btnPararAnimacao = findViewById(R.id.btnPararAnimacao);
 
         btnInclinarMais.setOnClickListener(this);
         btnInclinarMenos.setOnClickListener(this);
@@ -53,10 +58,15 @@ public class MapaNavigacaoActivity extends FragmentActivity implements OnMapRead
         btnZoomIn.setOnClickListener(this);
         btnZoomOut.setOnClickListener(this);
 
+        btnRodarAnimacao.setOnClickListener(this);
+        btnPararAnimacao.setOnClickListener(this);
+
         // Carregar mapas
         Button btnMapaUm = findViewById(R.id.btnMapaUm);
+        Button btnMapaDois = findViewById(R.id.btnMapaDois);
 
         btnMapaUm.setOnClickListener(this);
+        btnMapaDois.setOnClickListener(this);
     }
 
     @Override
@@ -82,9 +92,25 @@ public class MapaNavigacaoActivity extends FragmentActivity implements OnMapRead
             case R.id.btnZoomOut:
                 googleMap.moveCamera(CameraUpdateFactory.zoomOut());
 
+
+
             case R.id.btnMapaUm:
                 googleMap.setLatLngBoundsForCameraTarget(null);
                 googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(TORRES));
+                break;
+
+            case R.id.btnMapaDois:
+                googleMap.setLatLngBoundsForCameraTarget(null);
+                googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(CAPAO));
+
+
+            case R.id.btnRodarAnimacao:
+                googleMap.setLatLngBoundsForCameraTarget(null);
+                googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(TORRES));
+                break;
+
+            case R.id.btnPararAnimacao:
+                googleMap.stopAnimation();
                 break;
         }
     }

@@ -63,7 +63,7 @@
         map:layout_constraintTop_toBottomOf="@id/btnInclinarMais" />
 
     <Button
-        android:id="@+id/bPlayAnimation"
+        android:id="@+id/btnRodarAnimacao"
         style="@style/camera_function_buttons"
         android:text="\u25B6"
         map:layout_constraintEnd_toEndOf="parent"
@@ -71,12 +71,12 @@
         map:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bStopAnimation"
+        android:id="@+id/btnPararAnimacao"
         style="@style/camera_function_buttons"
         android:text="\u25A0"
         map:layout_constraintEnd_toEndOf="parent"
         map:layout_constraintStart_toStartOf="parent"
-        map:layout_constraintTop_toBottomOf="@id/bPlayAnimation" />
+        map:layout_constraintTop_toBottomOf="@id/btnRodarAnimacao" />
 
     <Button
         android:id="@+id/bGoToSydney"
@@ -94,12 +94,12 @@
         android:layout_height="wrap_content"
         android:text="Ir para Torres"
         android:textAllCaps="false"
-        map:layout_constraintEnd_toStartOf="@id/bGoToAdelaide"
+        map:layout_constraintEnd_toStartOf="@id/btnMapaDois"
         map:layout_constraintStart_toEndOf="@id/bGoToSydney"
         map:layout_constraintTop_toBottomOf="@id/btnInclinarMenos" />
 
     <Button
-        android:id="@+id/bGoToAdelaide"
+        android:id="@+id/btnMapaDois"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Go to Adelaide"
@@ -116,7 +116,7 @@
         android:textAllCaps="false"
         map:layout_constraintEnd_toStartOf="@id/bClampToAdelaide"
         map:layout_constraintStart_toStartOf="parent"
-        map:layout_constraintTop_toBottomOf="@id/bGoToAdelaide" />
+        map:layout_constraintTop_toBottomOf="@id/btnMapaDois" />
 
     <Button
         android:id="@+id/bClampToAdelaide"
@@ -126,7 +126,7 @@
         android:textAllCaps="false"
         map:layout_constraintEnd_toEndOf="parent"
         map:layout_constraintStart_toEndOf="@id/bClampToKawakami"
-        map:layout_constraintTop_toBottomOf="@id/bGoToAdelaide" />
+        map:layout_constraintTop_toBottomOf="@id/btnMapaDois" />
 
     <fragment
         android:id="@+id/map"
