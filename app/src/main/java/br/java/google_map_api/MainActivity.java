@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private String[] activityNomes = {
             "MapaBasico", "MapaNavigacao", "MapaCameraEventos", "Marker", "Shape",
-            "MapTypeAndStyle", "MapSettings", "Snapshot", "MyLocation", "LocationSource",
+            "MapaTipoEhEstilo", "MapSettings", "Snapshot", "MyLocation", "LocationSource",
             "Basic", "Navigation", "Events", "Settings", "AndMap"
     };
 

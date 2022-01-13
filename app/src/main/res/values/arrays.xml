@@ -6,7 +6,7 @@
         <item>Mapa Camera Eventos</item>
         <item>Marker</item>
         <item>Shape</item>
-        <item>Map Type and Style</item>
+        <item>Mapa Tipo e Estilo</item>
         <item>Map Settings</item>
         <item>Snapshot</item>
         <item>My Location</item>
@@ -16,5 +16,21 @@
         <item>StreetView Events</item>
         <item>StreetView Settings</item>
         <item>StreetView and Map</item>
+    </string-array>
+
+    <string-array name="mapTypeEntries">
+        <item>Normal</item>
+        <item>Satelite</item>
+        <item>Hybrid</item>
+        <item>Terrain</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="mapStyleEntries">
+        <item>Grayscale</item>
+        <item>Night</item>
+        <item>Retro</item>
+        <item>Transit</item>
+        <item>Default</item>
     </string-array>
 </resources>
