@@ -33,10 +33,11 @@ public class MapaNavigacaoActivity extends FragmentActivity implements OnMapRead
             .target(new LatLng(-29.977433, -50.123233)).zoom(12.0f).bearing(0).tilt(0).build();
 
     private static final LatLngBounds CAPAO_LIMITES =
-            new LatLngBounds(new LatLng(-29.7, -50.01), new LatLng(-29.76, -50.01));
+            new LatLngBounds(new LatLng(-30.0, -50.11), new LatLng(-29.9, -50.13));
+
 
     private static final LatLngBounds TRAMANDAI_LIMITES =
-            new LatLngBounds(new LatLng(-29.97, -50.12), new LatLng(-30.01, -50.13));
+            new LatLngBounds(new LatLng(-30.0, -50.12), new LatLng(-29.9, -50.13));
 
 
     @Override
