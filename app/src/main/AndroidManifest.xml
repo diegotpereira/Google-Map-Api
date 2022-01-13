@@ -24,6 +24,9 @@
         android:theme="@style/Theme.GoogleMapApi"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
+            android:name=".mapa.MapaConfiguracoesActivity"
+            android:exported="false" />
+        <activity
             android:name=".mapa.MapaTipoEhEstiloActivity"
             android:exported="false" />
         <!--
