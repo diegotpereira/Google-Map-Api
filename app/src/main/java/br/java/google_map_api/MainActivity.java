@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static final String TAG = "google_map_api";
 
     private String[] activityNomes = {
-            "MapaBasico", "MapNavigation", "MapCameraEvents", "Marker", "Shape",
+            "MapaBasico", "MapaNavigacao", "MapCameraEvents", "Marker", "Shape",
             "MapTypeAndStyle", "MapSettings", "Snapshot", "MyLocation", "LocationSource",
             "Basic", "Navigation", "Events", "Settings", "AndMap"
     };

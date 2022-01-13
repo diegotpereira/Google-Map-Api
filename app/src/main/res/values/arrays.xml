@@ -2,7 +2,7 @@
 <resources>
     <string-array name="activityEntries">
         <item>Mapa Basico</item>
-        <item>Map Navigation</item>
+        <item>Mapa Navegação</item>
         <item>Map Camera Events</item>
         <item>Marker</item>
         <item>Shape</item>

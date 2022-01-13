@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mapa.MapaNavigacaoActivity">
+
+    <Button
+        android:id="@+id/btnInclinarMais"
+        style="@style/camera_function_buttons"
+        android:text="\u2191"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInclinarMenos"
+        style="@style/camera_function_buttons"
+        android:text="\u2193"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toBottomOf="@id/btnInclinarMais" />
+
+    <Button
+        android:id="@+id/btnZoomIn"
+        style="@style/camera_function_buttons"
+        android:text="+"
+        map:layout_constraintEnd_toStartOf="@id/btnInclinarMais"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnZoomOut"
+        style="@style/camera_function_buttons"
+        android:text="-"
+        map:layout_constraintEnd_toStartOf="@id/btnInclinarMenos"
+        map:layout_constraintTop_toBottomOf="@id/btnZoomIn" />
+
+    <Button
+        android:id="@+id/bScrollLeft"
+        style="@style/camera_function_buttons"
+        android:text="\u2190"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@id/btnInclinarMais" />
+
+    <Button
+        android:id="@+id/bScrollUp"
+        style="@style/camera_function_buttons"
+        android:text="\u2191"
+        map:layout_constraintStart_toEndOf="@id/bScrollLeft"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bScrollDown"
+        style="@style/camera_function_buttons"
+        android:text="\u2193"
+        map:layout_constraintStart_toEndOf="@id/bScrollLeft"
+        map:layout_constraintTop_toBottomOf="@id/bScrollUp" />
+
+    <Button
+        android:id="@+id/bScrollRight"
+        style="@style/camera_function_buttons"
+        android:text="\u2192"
+        map:layout_constraintStart_toEndOf="@id/bScrollDown"
+        map:layout_constraintTop_toBottomOf="@id/btnInclinarMais" />
+
+    <Button
+        android:id="@+id/bPlayAnimation"
+        style="@style/camera_function_buttons"
+        android:text="\u25B6"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bStopAnimation"
+        style="@style/camera_function_buttons"
+        android:text="\u25A0"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@id/bPlayAnimation" />
+
+    <Button
+        android:id="@+id/bGoToSydney"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Go to Sydney"
+        android:textAllCaps="false"
+        map:layout_constraintEnd_toStartOf="@id/btnMapaUm"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@id/bScrollLeft" />
+
+    <Button
+        android:id="@+id/btnMapaUm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ir para Torres"
+        android:textAllCaps="false"
+        map:layout_constraintEnd_toStartOf="@id/bGoToAdelaide"
+        map:layout_constraintStart_toEndOf="@id/bGoToSydney"
+        map:layout_constraintTop_toBottomOf="@id/btnInclinarMenos" />
+
+    <Button
+        android:id="@+id/bGoToAdelaide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Go to Adelaide"
+        android:textAllCaps="false"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toEndOf="@id/btnMapaUm"
+        map:layout_constraintTop_toBottomOf="@id/btnInclinarMenos" />
+
+    <Button
+        android:id="@+id/bClampToKawakami"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Clamp to Kawakami"
+        android:textAllCaps="false"
+        map:layout_constraintEnd_toStartOf="@id/bClampToAdelaide"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@id/bGoToAdelaide" />
+
+    <Button
+        android:id="@+id/bClampToAdelaide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Clamp to Adelaide"
+        android:textAllCaps="false"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toEndOf="@id/bClampToKawakami"
+        map:layout_constraintTop_toBottomOf="@id/bGoToAdelaide" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintTop_toBottomOf="@id/bClampToAdelaide" />
+</androidx.constraintlayout.widget.ConstraintLayout>
