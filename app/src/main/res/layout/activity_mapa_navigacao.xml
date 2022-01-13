@@ -35,31 +35,31 @@
         map:layout_constraintTop_toBottomOf="@id/btnZoomIn" />
 
     <Button
-        android:id="@+id/bScrollLeft"
+        android:id="@+id/btnRolarParaEsquerda"
         style="@style/camera_function_buttons"
         android:text="\u2190"
         map:layout_constraintStart_toStartOf="parent"
         map:layout_constraintTop_toBottomOf="@id/btnInclinarMais" />
 
     <Button
-        android:id="@+id/bScrollUp"
+        android:id="@+id/btnRolarParaCima"
         style="@style/camera_function_buttons"
         android:text="\u2191"
-        map:layout_constraintStart_toEndOf="@id/bScrollLeft"
+        map:layout_constraintStart_toEndOf="@id/btnRolarParaEsquerda"
         map:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bScrollDown"
+        android:id="@+id/btnRolarParaBaixo"
         style="@style/camera_function_buttons"
         android:text="\u2193"
-        map:layout_constraintStart_toEndOf="@id/bScrollLeft"
-        map:layout_constraintTop_toBottomOf="@id/bScrollUp" />
+        map:layout_constraintStart_toEndOf="@id/btnRolarParaEsquerda"
+        map:layout_constraintTop_toBottomOf="@id/btnRolarParaCima" />
 
     <Button
-        android:id="@+id/bScrollRight"
+        android:id="@+id/btnRolarParaDireita"
         style="@style/camera_function_buttons"
         android:text="\u2192"
-        map:layout_constraintStart_toEndOf="@id/bScrollDown"
+        map:layout_constraintStart_toEndOf="@id/btnRolarParaBaixo"
         map:layout_constraintTop_toBottomOf="@id/btnInclinarMais" />
 
     <Button
@@ -79,33 +79,33 @@
         map:layout_constraintTop_toBottomOf="@id/btnRodarAnimacao" />
 
     <Button
-        android:id="@+id/bGoToSydney"
+        android:id="@+id/btnIrMapaTres"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Go to Sydney"
+        android:text="Ir para Tramanda"
         android:textAllCaps="false"
-        map:layout_constraintEnd_toStartOf="@id/btnMapaUm"
+        map:layout_constraintEnd_toStartOf="@id/btnIrMapaUm"
         map:layout_constraintStart_toStartOf="parent"
-        map:layout_constraintTop_toBottomOf="@id/bScrollLeft" />
+        map:layout_constraintTop_toBottomOf="@id/btnRolarParaEsquerda" />
 
     <Button
-        android:id="@+id/btnMapaUm"
+        android:id="@+id/btnIrMapaUm"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Ir para Torres"
         android:textAllCaps="false"
-        map:layout_constraintEnd_toStartOf="@id/btnMapaDois"
-        map:layout_constraintStart_toEndOf="@id/bGoToSydney"
+        map:layout_constraintEnd_toStartOf="@id/btnIrMapaDois"
+        map:layout_constraintStart_toEndOf="@id/btnIrMapaTres"
         map:layout_constraintTop_toBottomOf="@id/btnInclinarMenos" />
 
     <Button
-        android:id="@+id/btnMapaDois"
+        android:id="@+id/btnIrMapaDois"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Go to Adelaide"
+        android:text="Ir para Capão"
         android:textAllCaps="false"
         map:layout_constraintEnd_toEndOf="parent"
-        map:layout_constraintStart_toEndOf="@id/btnMapaUm"
+        map:layout_constraintStart_toEndOf="@id/btnIrMapaUm"
         map:layout_constraintTop_toBottomOf="@id/btnInclinarMenos" />
 
     <Button
@@ -116,7 +116,7 @@
         android:textAllCaps="false"
         map:layout_constraintEnd_toStartOf="@id/bClampToAdelaide"
         map:layout_constraintStart_toStartOf="parent"
-        map:layout_constraintTop_toBottomOf="@id/btnMapaDois" />
+        map:layout_constraintTop_toBottomOf="@id/btnIrMapaDois" />
 
     <Button
         android:id="@+id/bClampToAdelaide"
@@ -126,7 +126,7 @@
         android:textAllCaps="false"
         map:layout_constraintEnd_toEndOf="parent"
         map:layout_constraintStart_toEndOf="@id/bClampToKawakami"
-        map:layout_constraintTop_toBottomOf="@id/btnMapaDois" />
+        map:layout_constraintTop_toBottomOf="@id/btnIrMapaDois" />
 
     <fragment
         android:id="@+id/map"
