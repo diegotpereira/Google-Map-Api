@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (activityId < 10)
             activityParaIniciar = "br.java.google_map_api.mapa." + activityNomes[activityId] + "Activity";
         else
-            activityParaIniciar = "br.java.google_map_api.exibirRua.ExibirRua" + activityNomes[activityId] + "Activity";
+            activityParaIniciar = "br.java.google_map_api.exibirRua.StreetView" + activityNomes[activityId] + "Activity";
 
         try {
             Class<?> c = Class.forName(activityParaIniciar);

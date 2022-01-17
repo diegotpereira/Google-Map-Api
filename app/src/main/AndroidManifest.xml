@@ -24,12 +24,14 @@
         android:theme="@style/Theme.GoogleMapApi"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
-            android:name=".mapa.SnapshotActivity"
+            android:name=".exibirRua.StreetViewSettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.login.SnapshotActivity"
-            android:exported="false"
-            android:label="@string/title_activity_snapshot" />
+            android:name=".exibirRua.StreetViewNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".exibirRua.StreetViewEventsActivity"
+            android:exported="false" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -42,6 +44,14 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <activity
+            android:name=".exibirRua.StreetViewBasicActivity"
+            android:exported="false"
+            android:label="@string/title_activity_street_view_basic" />
+        <activity android:name=".exibirRua.StreetViewAndMapActivity" />
+        <activity
+            android:name=".mapa.SnapshotActivity"
+            android:exported="false" />
         <activity
             android:name=".mapa.LocationSourceActivity"
             android:exported="false"

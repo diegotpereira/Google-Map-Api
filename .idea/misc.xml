@@ -12,7 +12,12 @@
         <entry key="..\:/Users/administrator/AndroidStudioProjects/GoogleMapApi/app/src/main/res/layout/activity_marker.xml" value="0.2" />
         <entry key="..\:/Users/administrator/AndroidStudioProjects/GoogleMapApi/app/src/main/res/layout/activity_shape.xml" value="0.1" />
         <entry key="..\:/Users/administrator/AndroidStudioProjects/GoogleMapApi/app/src/main/res/layout/activity_snapshot2.xml" value="0.1359375" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/GoogleMapApi/app/src/main/res/layout/activity_street_view_basic.xml" value="0.1359375" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/GoogleMapApi/app/src/main/res/layout/activity_street_view_events.xml" value="0.1359375" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/GoogleMapApi/app/src/main/res/layout/activity_street_view_navigation.xml" value="0.1359375" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/GoogleMapApi/app/src/main/res/layout/activity_street_view_settings.xml" value="0.1359375" />
         <entry key="..\:/Users/administrator/AndroidStudioProjects/GoogleMapApi/app/src/main/res/layout/conteudo_informacoes_personalizadas.xml" value="0.75" />
+        <entry key="..\:/Users/administrator/AndroidStudioProjects/GoogleMapApi/app/src/main/res/layout/fragment_street_view_and_map_activity.xml" value="0.1359375" />
         <entry key="..\:/Users/administrator/AndroidStudioProjects/GoogleMapApi/app/src/main/res/layout/janela_informacoes_personalizadas.xml" value="0.13541666666666666" />
       </map>
     </option>
